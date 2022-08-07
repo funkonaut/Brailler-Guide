@@ -48,7 +48,7 @@ module base(){
 module slot(){
     union(){
         translate([0,0,slot_height/2])
-         #   cube([slot_hole,slot_width,slot_height],center=true);
+            cube([slot_hole,slot_width,slot_height],center=true);
         
         translate([0,0,-(material_thickness+e)/2])
             tabs(0,slot_width/4,slot_width);
@@ -82,8 +82,6 @@ slot_distance = 94.5; //distance inbetween middle slots (outsides)
 slot_gap = 21; //distance between slots (insides)
 
 
-slot();
-/*
 //2D render
 projection(){
     base();
